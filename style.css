@@ -25,6 +25,7 @@
 body,
 button {
 	font-family: "Manrope", sans-serif;
+	background-color: var(--very-pale-blue);
 }
 
 /* header section */
@@ -49,9 +50,22 @@ header {
 	font-size: 1.25rem;
 	font-weight: 800;
 	line-height: 2rem;
+	color: var(--dark-desaturated-blue);
 }
 
 .intro p {
 	line-height: 1.5rem;
 	font-size: 0.9rem;
+}
+
+/* info card section */
+.info-card {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 18rem;
+	border: 1px solid black;
+	height: 60%;
+	margin: 1.5rem;
+	opacity: 1;
 }
