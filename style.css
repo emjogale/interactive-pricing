@@ -38,9 +38,9 @@ header {
 
 /* TODO: why is the intro margin pushing the background image of the header down??  */
 .intro {
-	/* margin-top: 3rem; */
-	height: 50%;
-	background: no-repeat center url(./images/pattern-circles.svg);
+	padding-top: 2rem;
+	height: 60%;
+	background: content-box no-repeat center url(./images/pattern-circles.svg);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -64,7 +64,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 18rem;
+	top: 15rem;
 	border: 1px solid black;
 	height: 60%;
 	margin: 1.5rem;
