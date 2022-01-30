@@ -63,6 +63,7 @@ header {
 .info-card {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	position: absolute;
 	top: 15rem;
 	border: 1px solid black;
@@ -70,4 +71,9 @@ header {
 	margin: 1.5rem;
 	background-color: var(--white);
 	z-index: 1;
+}
+
+.card-top {
+	border-bottom: 1px solid var(--grayish-blue);
+	height: 50%;
 }
