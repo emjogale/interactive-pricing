@@ -63,17 +63,49 @@ header {
 .info-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: absolute;
 	top: 15rem;
+	left: 7.5%;
 	border: 1px solid black;
+	border-radius: 0.5rem;
 	height: 60%;
-	margin: 1.5rem;
+	width: 85%;
+	margin: 1rem auto;
 	background-color: var(--white);
 	z-index: 1;
+	padding: 2rem 1.5rem;
 }
-
+/* 
+top-card section */
 .card-top {
 	border-bottom: 1px solid var(--grayish-blue);
 	height: 50%;
+	display: grid;
+	text-align: center;
+	/* align-items: center; */
+}
+h2.page-views {
+	font-size: 0.75rem;
+}
+.amount {
+	font-size: 2rem;
+}
+.amount span {
+	font-size: 0.8rem;
+}
+.desktop.discount {
+	display: none;
+}
+
+/* card-bottom section */
+.card-bottom {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+ul {
+	text-align: center;
 }
