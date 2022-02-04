@@ -31,12 +31,10 @@ button {
 /* header section */
 header {
 	height: 45vh;
-	background-color: yellow;
-	/* background-image: url(./images/bg-pattern.svg); */
+	background-image: url(./images/bg-pattern.svg);
 	position: relative;
 }
 
-/* TODO: why is the intro margin pushing the background image of the header down??  */
 .intro {
 	padding-top: 2rem;
 	height: 60%;
@@ -92,6 +90,7 @@ h2.page-views {
 	appearance: none;
 	height: 0.5rem;
 	background-color: var(--light-grayish-blue);
+	border-radius: 0.25rem;
 	outline: none;
 }
 .amount {
