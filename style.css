@@ -83,8 +83,16 @@ top-card section */
 	text-align: center;
 	padding: 2rem 1.5rem;
 }
+
 h2.page-views {
 	font-size: 0.75rem;
+}
+.slider {
+	width: 100%;
+	appearance: none;
+	height: 0.5rem;
+	background-color: var(--light-grayish-blue);
+	outline: none;
 }
 .amount {
 	font-size: 2rem;
