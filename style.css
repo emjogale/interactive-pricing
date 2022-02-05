@@ -7,9 +7,9 @@
 	--pale-blue: hsl(226, 100%, 87%); /*(CTA Text)*/
 	--white: hsl(0, 0%, 100%); /*(Pricing Component Background)*/
 	--light-grayish-blue: hsl(223, 50%, 87%); /*(Toggle Background) */
-	--light-grayish-blue: hsl(224, 65%, 95%); /*(Empty Slider Bar)*/
+	--light-grayish-blue: hsl(226, 68%, 95%); /*(Empty Slider Bar)*/
 	--grayish-blue: hsl(225, 20%, 60%); /*(Text)*/
-	--dark-desaturated-blue: hsl(227, 35%, 25%); /*(Text & CTA Background)* */
+	--dark-desaturated-blue: hsl(226, 36%, 25%); /*(Text & CTA Background)* */
 	--very-pale-blue: hsl(230, 100%, 99%); /* (Main Background)*/
 }
 
@@ -25,6 +25,7 @@
 body,
 button {
 	font-family: "Manrope", sans-serif;
+	color: var(--dark-desaturated-blue);
 }
 
 /* header section */
@@ -48,7 +49,7 @@ header {
 	font-size: 1.25rem;
 	font-weight: 800;
 	line-height: 2rem;
-	color: var(--dark-desaturated-blue);
+	margin-bottom: 1rem;
 }
 
 .intro p {
@@ -64,7 +65,7 @@ header {
 	position: absolute;
 	top: 15rem;
 	left: 7.5%;
-
+	box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
 	border-radius: 0.5rem;
 	height: 60%;
 	width: 85%;
@@ -83,6 +84,8 @@ top-card section */
 
 h2.page-views {
 	font-size: 0.75rem;
+	letter-spacing: 0.2rem;
+	font-weight: 800;
 }
 /* slider styles */
 input[type="range"] {
@@ -90,6 +93,11 @@ input[type="range"] {
 	background: transparent;
 	cursor: pointer;
 	width: 100%;
+	background: linear-gradient(
+		90deg,
+		hsl(174, 76%, 80%) 0% 44%,
+		rgb(234, 238, 251) 44% 100%
+	);
 }
 
 /* track styles */
