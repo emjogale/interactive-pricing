@@ -25,7 +25,6 @@
 body,
 button {
 	font-family: "Manrope", sans-serif;
-	background-color: var(--very-pale-blue);
 }
 
 /* header section */
@@ -58,14 +57,14 @@ header {
 }
 
 /* info card section */
-.info-card {
+.pricing-component {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	position: absolute;
 	top: 15rem;
 	left: 7.5%;
-	border: 1px solid black;
+
 	border-radius: 0.5rem;
 	height: 60%;
 	width: 85%;
@@ -85,14 +84,72 @@ top-card section */
 h2.page-views {
 	font-size: 0.75rem;
 }
-.slider {
+/* slider styles */
+input[type="range"] {
+	-webkit-appearance: none;
+	background: transparent;
+	cursor: pointer;
 	width: 100%;
-	appearance: none;
-	height: 0.5rem;
-	background-color: var(--light-grayish-blue);
-	border-radius: 0.25rem;
-	outline: none;
 }
+
+/* track styles */
+input[type="range"]::-webkit-slider-runnable-track {
+	background: hsl(174, 77%, 80%);
+	height: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+input[type="range"]::-moz-range-track {
+	background: hsl(174, 77%, 80%);
+	height: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+/* thumb styles */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-image: url(./images/icon-slider.svg);
+	background-color: hsl(174, 77%, 80%);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	margin-top: -16px;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+	box-shadow: 0px 10px 20px 5px hsl(174, 77%, 80%);
+	background-color: hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-moz-range-thumb {
+	border: none;
+	background-image: url(./images/icon-slider.svg);
+	background-color: hsl(174, 77%, 80%);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	margin-top: -16px;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+	box-shadow: 0px 10px 20px 5px hsl(174, 77%, 80%);
+	background-color: hsl(174, 86%, 45%);
+}
+
+/* focus styles */
+input[type="range"]:focus {
+	outline: none;
+	cursor: grab;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+	border: 1px solid hsl(174, 77%, 80%);
+	outline: 1px solid hsl(174, 77%, 80%);
+}
+
 .amount {
 	font-size: 2rem;
 }
