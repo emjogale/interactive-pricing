@@ -57,8 +57,9 @@ header {
 	font-size: 0.9rem;
 }
 
-/* info card section */
-.pricing-component {
+/* pricing card component section */
+.pricing-component-card {
+	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -86,6 +87,7 @@ h2.page-views {
 	font-size: 0.75rem;
 	letter-spacing: 0.2rem;
 	font-weight: 800;
+	margin-bottom: 1rem;
 }
 /* slider styles */
 input[type="range"] {
@@ -159,10 +161,18 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .amount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 2rem;
+}
+
+.amount p {
+	font-weight: 800;
 }
 .amount span {
 	font-size: 0.8rem;
+	padding-left: 0.65rem;
 }
 .desktop.discount {
 	display: none;
