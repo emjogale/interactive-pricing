@@ -234,9 +234,15 @@ input:checked + .switch-slider:before {
 }
 /* discount switch toggler */
 
+.mobile.discount {
+	display: inline-block;
+	padding: 0.3rem 0.4rem;
+}
 .discount {
 	background-color: var(--light-grayish-red);
 	color: var(--light-red);
+	border-radius: 2rem;
+	font-size: 0.625rem;
 }
 .desktop.discount {
 	display: none;
