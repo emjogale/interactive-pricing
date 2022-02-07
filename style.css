@@ -57,6 +57,13 @@ header {
 	font-size: 0.9rem;
 }
 
+.sign-up {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: fit-content;
+}
 /* pricing card component section */
 .pricing-component-card {
 	border: 1px solid black;
@@ -269,4 +276,31 @@ input:checked + .switch-slider:before {
 
 .checklist li {
 	padding-left: 0.5rem;
+}
+
+button.cta {
+	background: none;
+	background-color: var(--dark-desaturated-blue);
+	color: var(--pale-blue);
+	border: none;
+	padding: 0.8rem 3rem;
+	font-size: 1em;
+	transition: all 0.2s;
+	font-size: 0.75rem;
+	letter-spacing: 0.1em;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+/* wider screen styles styles */
+@media only screen and (min-width: 800px) {
+	.intro h1 {
+		font-size: 1.75rem;
+	}
+	.sign-up {
+		flex-direction: row;
+	}
+	.credit {
+		padding-left: 0.3rem;
+	}
 }
