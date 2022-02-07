@@ -256,7 +256,17 @@ input:checked + .switch-slider:before {
 	justify-content: space-around;
 	align-items: center;
 	border-top: 1px solid var(--grayish-blue);
+	padding-bottom: 2rem;
 }
-ul {
-	text-align: center;
+.card-bottom ul {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	justify-content: space-around;
+	align-items: center;
+	list-style-image: url(./images/icon-check.svg);
+}
+
+.checklist li {
+	padding-left: 0.5rem;
 }
