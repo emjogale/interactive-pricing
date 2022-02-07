@@ -176,6 +176,54 @@ input[type="range"]:focus::-webkit-slider-thumb {
 	padding-left: 0.65rem;
 }
 
+/* monthly/yearly toggle switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: hsl(223, 50%, 87%);
+	border-radius: 34px;
+}
+
+input:checked + .switch-slider {
+	background-color: hsl(174, 86%, 45%);
+}
+
+.switch-slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	bottom: 4px;
+	left: 4px;
+	border-radius: 50%;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .switch-slider:before {
+	-webkit-transform: translateX(24px);
+	-ms-transform: translateX(24px);
+	transform: translateX(24px);
+}
+
 /* billing section */
 .billing {
 	margin: 0 0 0 8%;
