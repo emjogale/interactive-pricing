@@ -86,6 +86,11 @@ top-card section */
 .card-top {
 	height: 50%;
 	display: grid;
+	grid-template-areas:
+		"page-views "
+		"slider-container "
+		"amount"
+		"billing ";
 	text-align: center;
 	padding: 2rem 1.5rem;
 }
@@ -303,4 +308,32 @@ button.cta {
 	.credit {
 		padding-left: 0.3rem;
 	}
+
+	.pricing-component-card {
+		max-width: 40%;
+		left: 30%;
+	}
+	.card-top {
+		height: 65%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"page-views amount"
+			"slider-container slider-container"
+			"billing billing";
+	}
+	.amount {
+		grid-area: amount;
+	}
+	.slider-container {
+		grid-area: slider-container;
+	}
+	.billing {
+		grid-area: billing;
+	}
+	h2.page-views {
+		margin-top: 3.5rem;
+	}
 }
+
+/* TODO: reduce maximum width of card and change grid areas of top of card */
