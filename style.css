@@ -316,11 +316,12 @@ button.cta {
 	.card-top {
 		height: 65%;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
+		grid-template-rows: 3fr 1fr 3fr;
 		grid-template-areas:
 			"page-views amount"
 			"slider-container slider-container"
 			"billing billing";
+		padding: 0 3rem;
 	}
 	.amount {
 		grid-area: amount;
@@ -331,9 +332,14 @@ button.cta {
 	.billing {
 		grid-area: billing;
 	}
+	.h2-container {
+		display: flex;
+		align-items: center;
+	}
 	h2.page-views {
-		margin-top: 3.5rem;
+		margin-bottom: 0;
 	}
 }
-
-/* TODO: reduce maximum width of card and change grid areas of top of card */
+/* TODO: increase font size of page views and check amount per month
+narrow down billing and change div card bottom to  row layout 
+narrow gap between billing and slider*/
