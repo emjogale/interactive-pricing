@@ -51,6 +51,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
@@ -60,7 +61,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Continued development
 
-- I have yet to learn how to colour the slider track differently each side of the thumb ...
+- how to refactor the javascript, as I think it is quite clumsy at the moment
 
 ### Useful resources
 
