@@ -39,28 +39,29 @@
 				<div class="card-top">
 					<div class="h2-container">
 						<h2 class="page-views">
-							<span class="no-of-views">100K</span> PAGEVIEWS
+							<span class="views">100K</span> PAGEVIEWS
 						</h2>
 					</div>
 					<div class="slider-container">
 						<div>
 							<input
 								type="range"
-								id="pageviews"
+								id="slider"
 								class="slider"
-								name="pageviews"
-								min="10"
-								max="1000"
-								step="50"
+								name="slider"
+								min="0"
+								max="4"
+								value="2"
 							/>
 						</div>
 					</div>
 					<div class="amount">
-						<p class="amount-per-month">$16.00</p>
-						<span>/ month</span>
+						<p class="amount-per-month">$</p>
+						<span class="dollars">16.00</span>
+						<span class="amount">/ month</span>
 					</div>
 					<div class="billing">
-						<p>Monthly Billing</p>
+						<label for="discount"> <p>Monthly Billing</p></label>
 						<div class="toggle">
 							<label for="discount" class="switch">
 								<input type="checkbox" id="discount" />
@@ -83,5 +84,6 @@
 				</div>
 			</div>
 		</main>
+		<script src="main.js"></script>
 	</body>
 </html>

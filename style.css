@@ -66,7 +66,6 @@ header {
 }
 /* pricing card component section */
 .pricing-component-card {
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -181,10 +180,12 @@ input[type="range"]:focus::-webkit-slider-thumb {
 	font-size: 2rem;
 }
 
-.amount p {
+.amount p,
+span.dollars {
 	font-weight: 800;
 }
-.amount span {
+
+span.amount {
 	font-size: 0.8rem;
 	padding-left: 0.65rem;
 }
@@ -342,10 +343,13 @@ button.cta {
 		margin-bottom: 0;
 		font-size: 0.875rem;
 	}
-	.amount-per-month {
+	.amount-per-month,
+	span.dollars {
 		font-size: 2.5rem;
+		font-weight: 800;
 	}
-	.amount span {
+
+	span.amount {
 		font-size: 1rem;
 	}
 	.billing {
