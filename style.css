@@ -66,7 +66,6 @@ header {
 }
 /* pricing card component section */
 .pricing-component-card {
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
