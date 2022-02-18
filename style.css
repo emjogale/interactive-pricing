@@ -31,7 +31,8 @@ button {
 /* header section */
 header {
 	height: 45vh;
-	background-image: url(./images/bg-pattern.svg);
+	background: no-repeat url(./images/bg-pattern.svg);
+	background-size: cover;
 	position: relative;
 }
 
@@ -324,7 +325,8 @@ button.cta {
 	.pricing-component-card {
 		height: 44.3%;
 		max-width: 540px;
-		left: 30%;
+		left: 50%;
+		margin-left: -270px;
 	}
 	.card-top {
 		height: 70%;
