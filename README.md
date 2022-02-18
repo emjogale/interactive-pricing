@@ -61,6 +61,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 ### Continued development
 
 - how to refactor the Javascript, as I think it is quite clumsy at the moment
+- how to make the slider look the same across all browsers - and in the solution/design comparison!
 
 ### Useful resources
 

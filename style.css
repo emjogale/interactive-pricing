@@ -29,7 +29,10 @@ button {
 }
 
 p,
-h2 {
+h2,
+span.amount,
+label.discount,
+.checklist {
 	color: var(--grayish-blue);
 }
 
@@ -205,7 +208,7 @@ span.dollars {
 span.amount {
 	font-size: 0.8rem;
 }
-
+/* billing section */
 /* monthly/yearly toggle switch */
 .switch {
 	position: relative;
@@ -254,7 +257,6 @@ input:checked + .switch-slider:before {
 	transform: translateX(24px);
 }
 
-/* billing section */
 .billing {
 	margin: 0 0 0 8%;
 	display: flex;
@@ -262,8 +264,9 @@ input:checked + .switch-slider:before {
 	align-items: center;
 	font-size: 0.75rem;
 }
-/* discount switch toggler */
-
+label.discount {
+	font-size: 0.75rem;
+}
 .mobile.discount {
 	display: inline-block;
 	padding: 0.3rem 0.4rem;
