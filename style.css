@@ -28,11 +28,17 @@ button {
 	color: var(--dark-desaturated-blue);
 }
 
+p,
+h2 {
+	color: var(--grayish-blue);
+}
+
 /* header section */
 header {
 	height: 45vh;
 	background: no-repeat url(./images/bg-pattern.svg);
 	background-size: cover;
+	background-position: left;
 	position: relative;
 }
 
@@ -73,7 +79,7 @@ header {
 	position: absolute;
 	top: 15rem;
 	left: 7.5%;
-	box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+	box-shadow: 0px 20px 30px -5px var(--light-grayish-blue);
 	border-radius: 0.5rem;
 	height: 60%;
 	width: 85%;
@@ -93,7 +99,7 @@ top-card section */
 		"billing ";
 	text-align: center;
 	padding: 2rem 1.5rem;
-	border-bottom: 1px solid var(--grayish-blue);
+	border-bottom: 1px solid var(--light-grayish-blue);
 }
 
 h2.page-views {
@@ -108,11 +114,14 @@ span.views {
 	width: 40px;
 	text-align: end;
 }
-
+p.amount-per-month {
+	color: var(--dark-desaturated-blue);
+}
 span.dollars {
 	display: inline-block;
 	width: 115px;
 }
+
 /* slider styles */
 input[type="range"] {
 	-webkit-appearance: none;
@@ -121,9 +130,10 @@ input[type="range"] {
 	width: 100%;
 	background: linear-gradient(
 		90deg,
-		hsl(174, 76%, 80%) 0% 47%,
-		rgb(234, 238, 251) 44% 100%
+		var(--soft-cyan) 0% 47%,
+		var(--light-grayish-blue) 44% 100%
 	);
+	box-shadow: 0px 3px 3px -2px var(--grayish-blue);
 }
 
 /* track styles */
@@ -133,7 +143,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-moz-range-track {
-	background: hsl(174, 77%, 80%);
+	background: var(--strong-cyan);
 	height: 0.5rem;
 	border-radius: 0.25rem;
 }
@@ -142,7 +152,8 @@ input[type="range"]::-moz-range-track {
 input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	background-image: url(./images/icon-slider.svg);
-	background-color: hsl(174, 77%, 80%);
+	background-color: var(--strong-cyan);
+	box-shadow: 0px 10px 20px 5px var(--soft-cyan);
 	width: 2.5rem;
 	height: 2.5rem;
 	background-repeat: no-repeat;
@@ -150,15 +161,12 @@ input[type="range"]::-webkit-slider-thumb {
 	border-radius: 50%;
 	margin-top: -16px;
 }
-input[type="range"]::-webkit-slider-thumb:hover {
-	box-shadow: 0px 10px 20px 5px hsl(174, 77%, 80%);
-	background-color: hsl(174, 86%, 45%);
-}
 
 input[type="range"]::-moz-range-thumb {
 	border: none;
 	background-image: url(./images/icon-slider.svg);
 	background-color: hsl(174, 77%, 80%);
+	box-shadow: 0px 10px 20px 5px var(--soft-cyan);
 	width: 2.5rem;
 	height: 2.5rem;
 	background-repeat: no-repeat;
@@ -168,8 +176,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-moz-range-thumb:hover {
-	box-shadow: 0px 10px 20px 5px hsl(174, 77%, 80%);
-	background-color: hsl(174, 86%, 45%);
+	background-color: var(--strong-cyan);
 }
 
 /* focus styles */
@@ -179,8 +186,8 @@ input[type="range"]:focus {
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-	border: 1px solid hsl(174, 77%, 80%);
-	outline: 1px solid hsl(174, 77%, 80%);
+	border: 1px solid var(--soft-cyan);
+	outline: 1px solid var(--soft-cyan);
 }
 
 /* amount per month section */
@@ -198,7 +205,6 @@ span.dollars {
 
 span.amount {
 	font-size: 0.8rem;
-	padding-left: 0.65rem;
 }
 
 /* monthly/yearly toggle switch */
@@ -222,12 +228,12 @@ span.amount {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: hsl(223, 50%, 87%);
+	background-color: var(--light-grayish-blue);
 	border-radius: 34px;
 }
 
 input:checked + .switch-slider {
-	background-color: hsl(174, 86%, 45%);
+	background-color: var(--strong-cyan);
 }
 
 .switch-slider:before {
@@ -368,6 +374,7 @@ button.cta {
 
 	span.amount {
 		font-size: 1rem;
+		padding-left: 0.4rem;
 	}
 	.billing {
 		margin-left: 20%;

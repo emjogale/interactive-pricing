@@ -4,7 +4,6 @@ let amount = document.querySelector("span.dollars");
 let discount = document.getElementById("discount");
 let views;
 let num = 16;
-console.log(amount);
 
 // function to see if discount checkbox is checked/unchecked and if so apply/remove discount
 function checkDiscount() {
@@ -52,6 +51,6 @@ discount.addEventListener("click", checkDiscount);
 slider.addEventListener("input", function () {
 	let x = slider.value;
 	let percent = x * 25;
-	let color = `linear-gradient(90deg, hsl(174, 76%, 80%) 0% ${percent}%, rgb(234, 238, 251) ${percent}% 100%)`;
+	let color = `linear-gradient(90deg, var(--soft-cyan) 0% ${percent}%, var(--light-grayish-blue) ${percent}% 100%)`;
 	slider.style.background = color;
 });
