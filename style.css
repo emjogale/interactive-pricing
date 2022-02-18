@@ -319,6 +319,7 @@ button.cta {
 @media only screen and (min-width: 1050px) {
 	.intro h1 {
 		font-size: 1.75rem;
+		padding-top: 2.5rem;
 	}
 	.sign-up {
 		flex-direction: row;
@@ -329,6 +330,7 @@ button.cta {
 
 	.pricing-component-card {
 		height: 44.3%;
+		top: 17rem;
 		max-width: 540px;
 		left: 50%;
 		margin-left: -270px;
