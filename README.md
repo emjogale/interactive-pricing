@@ -2,8 +2,6 @@
 
 This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-card-t0m8PIyY8).
 
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -37,12 +35,12 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Screenshot
 
-![]()
+![](./images/screenshot.png)
 
 ### Links
 
 - Solution URL: [github.com/emjogale/maker-landing-page](https://github.com/emjogale/interactive-pricing)
-- Live Site URL: []()
+- Live Site URL: [https://interactive-pricing-gr8tpwpyp-emjogale.vercel.app](https://interactive-pricing-gr8tpwpyp-emjogale.vercel.app/)
 
 ## My process
 
@@ -62,7 +60,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Continued development
 
-- how to refactor the javascript, as I think it is quite clumsy at the moment
+- how to refactor the Javascript, as I think it is quite clumsy at the moment
 
 ### Useful resources
 
