@@ -120,7 +120,7 @@ input[type="range"] {
 	width: 100%;
 	background: linear-gradient(
 		90deg,
-		hsl(174, 76%, 80%) 0% 44%,
+		hsl(174, 76%, 80%) 0% 47%,
 		rgb(234, 238, 251) 44% 100%
 	);
 }
@@ -392,9 +392,7 @@ button.cta {
 		font-size: 1.2rem;
 	}
 }
-/* TODO: increase font size of page views and check amount per month
-narrow down billing and change div card bottom to  row layout 
-narrow gap between billing and slider
-align-left card-bottom ul
+/* TODO: on wide screen layout (like my desktop)  h1 isn't centred over card - sort this
+- check over font sizes etc
 change color of horiz line
 */
