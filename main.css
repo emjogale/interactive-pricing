@@ -60,13 +60,13 @@ header p {
 .pricing-component-card {
 	border: 1px solid black;
 	border-radius: 0.5rem;
-	margin: 4rem 1.5rem;
+	margin: 3rem 1.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--white);
-	box-shadow: 0px 16px 16px 0px var(--light-grayish-blue);
+	box-shadow: 0 1rem 1rem 0 var(--light-grayish-blue);
 }
 
 /* 
@@ -78,14 +78,13 @@ top-card section */
 	justify-content: center;
 	align-items: center;
 	border-bottom: 1px solid var(--light-grayish-blue);
-	padding: 2rem 1.5rem;
 }
 
 .page-views {
 	font-size: 0.75rem;
 	letter-spacing: 0.1rem;
 	font-weight: 800;
-	margin-bottom: 1rem;
+	margin: 2rem auto 1rem;
 }
 
 span.views {
