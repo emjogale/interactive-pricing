@@ -47,8 +47,6 @@ body {
 
 .intro {
 	padding-top: 2rem;
-
-	background: content-box no-repeat center url(./images/pattern-circles.svg);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -358,7 +356,7 @@ button.cta {
 		display: flex;
 		align-items: center;
 	}
-	h2.page-views {
+	.page-views {
 		margin-bottom: 0;
 		font-size: 0.875rem;
 	}
