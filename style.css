@@ -36,9 +36,12 @@ label.discount,
 	color: var(--grayish-blue);
 }
 
+main {
+	min-height: 100vh;
+}
+
 /* header section */
 header {
-	height: 45vh;
 	background: no-repeat url(./images/bg-pattern.svg);
 	background-size: cover;
 	background-position: left;
