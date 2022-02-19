@@ -1,0 +1,152 @@
+/* global variables */
+:root {
+	--soft-cyan: hsl(174, 77%, 80%); /*(Full Slider Bar) */
+	--strong-cyan: hsl(174, 86%, 45%); /*(Slider Backround)*/
+	--light-grayish-red: hsl(14, 92%, 95%); /*(Discount Background)*/
+	--light-red: hsl(15, 100%, 70%); /* (Discount Text)*/
+	--pale-blue: hsl(226, 100%, 87%); /*(CTA Text)*/
+	--white: hsl(0, 0%, 100%); /*(Pricing Component Background)*/
+	--light-grayish-blue: hsl(223, 50%, 87%); /*(Toggle Background) */
+	--light-grayish-blue: hsl(226, 68%, 95%); /*(Empty Slider Bar)*/
+	--grayish-blue: hsl(225, 20%, 60%); /*(Text)*/
+	--dark-desaturated-blue: hsl(226, 36%, 25%); /*(Text & CTA Background)* */
+	--very-pale-blue: hsl(230, 100%, 99%); /* (Main Background)*/
+}
+
+/*global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+/* Typography */
+body,
+button {
+	font-family: "Manrope", sans-serif;
+	color: var(--grayish-blue);
+}
+
+main {
+	min-height: 100vh;
+	background: no-repeat url(./images/bg-pattern.svg);
+}
+
+/* header */
+header {
+	padding: 5rem 0 3rem;
+	background: no-repeat center url(./images/pattern-circles.svg);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 1.25rem;
+	font-weight: 800;
+	line-height: 2rem;
+	margin-bottom: 0.5rem;
+	color: var(--dark-desaturated-blue);
+}
+
+header p {
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+/* pricing-component-card section */
+.pricing-component-card {
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	margin: 4rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white);
+	box-shadow: 0px 16px 16px 0px var(--light-grayish-blue);
+}
+
+/* 
+top-card section */
+.card-top {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid var(--light-grayish-blue);
+	padding: 2rem 1.5rem;
+}
+
+.page-views {
+	font-size: 0.75rem;
+	letter-spacing: 0.1rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+}
+
+span.views {
+	display: inline-block;
+	width: 40px;
+	text-align: end;
+}
+/* amount per month section */
+.amount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.amount p,
+span.dollars {
+	font-weight: 800;
+}
+
+span.amount {
+	font-size: 0.8rem;
+}
+p.amount-per-month,
+span.dollars {
+	color: var(--dark-desaturated-blue);
+}
+span.dollars {
+	display: inline-block;
+	width: 115px;
+}
+.billing {
+	margin: 0 0 0 8%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 0.75rem;
+}
+/* wider screen styles styles */
+@media only screen and (min-width: 1050px) {
+	.card-top {
+		display: grid;
+		grid-template-areas:
+			"page-views "
+			"slider-container "
+			"amount"
+			"billing ";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 3fr 1fr 3fr;
+		grid-template-areas:
+			"page-views amount"
+			"slider-container slider-container"
+			"billing billing";
+	}
+	.amount {
+		grid-area: amount;
+	}
+	.slider-container {
+		grid-area: slider-container;
+	}
+	.billing {
+		grid-area: billing;
+	}
+}
