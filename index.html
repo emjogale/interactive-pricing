@@ -12,7 +12,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="reset.css" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -25,35 +25,30 @@
 	<body>
 		<main>
 			<header>
-				<div class="intro">
-					<h1 class="heading">Simple, traffic-based pricing</h1>
-
-					<div class="sign-up">
-						<p class="sign-up">Sign-up for our 30-day trial.</p>
-						<p class="sign-up credit">No credit card required.</p>
-					</div>
+				<h1 class="heading">Simple, traffic-based pricing</h1>
+				<div class="sign-up">
+					<p class="sign-up">Sign-up for our 30-day trial.</p>
+					<p class="sign-up credit">No credit card required.</p>
 				</div>
 			</header>
 
 			<div class="pricing-component-card">
 				<div class="card-top">
-					<div class="h2-container">
-						<h2 class="page-views">
+					<div class="pageviews-container">
+						<div class="page-views">
 							<span class="views">100K</span> PAGEVIEWS
-						</h2>
+						</div>
 					</div>
 					<div class="slider-container">
-						<div>
-							<input
-								type="range"
-								id="slider"
-								class="slider"
-								name="slider"
-								min="0"
-								max="4"
-								value="2"
-							/>
-						</div>
+						<input
+							type="range"
+							id="slider"
+							class="slider"
+							name="slider"
+							min="0"
+							max="4"
+							value="2"
+						/>
 					</div>
 					<div class="amount">
 						<p class="amount-per-month">$</p>
@@ -61,14 +56,14 @@
 						<span class="amount">/ month</span>
 					</div>
 					<div class="billing">
-						<label for="discount" class="discount">Monthly Billing</label>
+						<div class="monthly">Monthly Billing</div>
 						<div class="toggle">
 							<label for="discount" class="switch">
 								<input type="checkbox" id="discount" />
 								<span class="switch-slider"></span>
 							</label>
 						</div>
-						<label for="discount" class="discount">Yearly Billing</label>
+						<div class="yearly">Yearly Billing</div>
 						<span class="mobile discount">-25%</span
 						><span class="desktop discount">25% discount</span>
 					</div>

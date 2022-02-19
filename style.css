@@ -28,6 +28,10 @@ button {
 	color: var(--dark-desaturated-blue);
 }
 
+html {
+	font-size: 16px;
+}
+
 p,
 h2,
 span.amount,
@@ -36,21 +40,14 @@ label.discount,
 	color: var(--grayish-blue);
 }
 
-main {
+body {
 	min-height: 100vh;
-}
-
-/* header section */
-header {
 	background: no-repeat url(./images/bg-pattern.svg);
-	background-size: cover;
-	background-position: left;
-	position: relative;
 }
 
 .intro {
 	padding-top: 2rem;
-	height: 60%;
+
 	background: content-box no-repeat center url(./images/pattern-circles.svg);
 	display: flex;
 	flex-direction: column;
@@ -77,21 +74,15 @@ header {
 	align-items: center;
 	min-width: fit-content;
 }
-/* pricing card component section */
+/*pricing card component section */
 .pricing-component-card {
+	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	position: absolute;
+	position: relative;
 	top: 15rem;
 	left: 7.5%;
-	box-shadow: 0px 20px 30px -5px var(--light-grayish-blue);
-	border-radius: 0.5rem;
-	height: 60%;
-	width: 85%;
-	margin: 1rem auto;
-	background-color: var(--white);
-	z-index: 1;
 }
 /* 
 top-card section */
@@ -108,7 +99,7 @@ top-card section */
 	border-bottom: 1px solid var(--light-grayish-blue);
 }
 
-h2.page-views {
+.page-views {
 	font-size: 0.75rem;
 	letter-spacing: 0.2rem;
 	font-weight: 800;
@@ -322,7 +313,7 @@ button.cta {
 }
 
 /* wider screen styles styles */
-@media only screen and (min-width: 1050px) {
+/* @media only screen and (min-width: 1050px) {
 	.intro {
 		padding-top: 2.5rem;
 	}
@@ -337,14 +328,14 @@ button.cta {
 		padding-left: 0.3rem;
 	}
 
-	.pricing-component-card {
+	/* .pricing-component-card {
 		height: 44.3%;
 		top: 19rem;
 		max-width: 540px;
 		left: 50%;
 		margin-left: -270px;
-	}
-	.card-top {
+	} */
+/*.card-top {
 		height: 70%;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 3fr 1fr 3fr;
@@ -410,7 +401,7 @@ button.cta {
 	h1.heading {
 		font-size: 1.2rem;
 	}
-}
+} */
 /* TODO: on wide screen layout (like my desktop)  h1 isn't centred over card - sort this
 - check over font sizes etc
 change color of horiz line
