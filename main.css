@@ -334,8 +334,7 @@ button:hover {
 
 	.pricing-component-card {
 		width: 545px;
-
-		margin: 5.5rem auto;
+		margin: 4rem auto;
 	}
 	.card-top {
 		display: grid;
