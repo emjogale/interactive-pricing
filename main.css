@@ -334,7 +334,7 @@ button:hover {
 
 	.pricing-component-card {
 		width: 545px;
-		margin: 4rem auto;
+		margin: 3rem auto;
 	}
 	.card-top {
 		display: grid;
@@ -344,7 +344,7 @@ button:hover {
 			"amount"
 			"billing ";
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr 2fr;
+		grid-template-rows: 2fr 1fr 1.5fr;
 		grid-template-areas:
 			"page-views amount"
 			"slider-container slider-container"
@@ -361,6 +361,9 @@ button:hover {
 		grid-area: amount;
 		font-size: 2.5rem;
 		padding-left: 0.5rem;
+	}
+	span.amount {
+		font-size: 1rem;
 	}
 	span.dollars {
 		min-width: 110px;
