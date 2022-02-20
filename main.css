@@ -322,7 +322,7 @@ button:hover {
 @media only screen and (min-width: 1050px) {
 	h1 {
 		font-size: 1.75rem;
-		padding-top: 2.8rem;
+		padding-top: 2.6rem;
 	}
 	.sign-up {
 		display: flex;
@@ -344,7 +344,7 @@ button:hover {
 			"amount"
 			"billing ";
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr 1.5fr;
+		grid-template-rows: 2fr 1fr 2fr;
 		grid-template-areas:
 			"page-views amount"
 			"slider-container slider-container"
@@ -353,6 +353,7 @@ button:hover {
 	.page-views {
 		font-size: 0.87rem;
 		padding-left: 1rem;
+		margin-top: 2.5rem;
 	}
 	.page-views {
 		width: 75%;
@@ -375,6 +376,7 @@ button:hover {
 	.billing {
 		grid-area: billing;
 		justify-content: center;
+		margin-top: 1.5rem;
 		margin-left: 5rem;
 	}
 	.mobile.discount {
