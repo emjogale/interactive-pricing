@@ -6,7 +6,7 @@
 	--light-red: hsl(15, 100%, 70%); /* (Discount Text)*/
 	--pale-blue: hsl(226, 100%, 87%); /*(CTA Text)*/
 	--white: hsl(0, 0%, 100%); /*(Pricing Component Background)*/
-	--light-grayish-blue: hsl(223, 50%, 87%); /*(Toggle Background) */
+	--light-grayish-blue-toggle: hsl(223, 50%, 87%); /*(Toggle Background) */
 	--light-grayish-blue: hsl(226, 68%, 95%); /*(Empty Slider Bar)*/
 	--grayish-blue: hsl(225, 20%, 60%); /*(Text)*/
 	--dark-desaturated-blue: hsl(226, 36%, 25%); /*(Text & CTA Background)* */
@@ -93,6 +93,11 @@ span.views {
 	text-align: end;
 }
 /* slider styles */
+.slider-container {
+	width: 85%;
+	margin: 1.5rem auto;
+}
+
 input[type="range"] {
 	-webkit-appearance: none;
 	background: transparent;
@@ -106,10 +111,6 @@ input[type="range"] {
 }
 
 /* track styles */
-.slider-container {
-	width: 85%;
-	margin: 2rem auto;
-}
 input[type="range"]::-webkit-slider-runnable-track {
 	height: 0.5rem;
 	border-radius: 0.25rem;
@@ -189,6 +190,7 @@ span.dollars {
 	justify-content: space-around;
 	align-items: center;
 	font-size: 0.75rem;
+	margin: 1rem auto;
 }
 .monthly,
 .yearly {
@@ -219,6 +221,7 @@ span.dollars {
 }
 
 .switch input {
+	-webkit-appearance: none;
 	opacity: 0;
 	width: 0;
 	height: 0;
@@ -231,8 +234,9 @@ span.dollars {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--grayish-blue);
+	background-color: var(--light-grayish-blue-toggle);
 	border-radius: 30px;
+	transition: 0.3s;
 }
 
 input:checked + .switch-slider {
@@ -256,6 +260,23 @@ input:checked + .switch-slider:before {
 	-webkit-transform: translateX(22px);
 	-ms-transform: translateX(22px);
 	transform: translateX(22px);
+}
+
+/* card-bottom section */
+.card-bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 2rem auto;
+}
+.card-bottom ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	list-style-image: url(./images/icon-check.svg);
 }
 /* wider screen styles styles */
 @media only screen and (min-width: 1050px) {
