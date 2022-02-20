@@ -320,7 +320,7 @@ button:hover {
 
 /* wider screen styles styles */
 @media only screen and (min-width: 1050px) {
-	.intro h1 {
+	h1 {
 		font-size: 1.75rem;
 		padding-top: 2.5rem;
 	}
