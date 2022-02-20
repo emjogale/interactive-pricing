@@ -6,10 +6,11 @@
 	--light-red: hsl(15, 100%, 70%); /* (Discount Text)*/
 	--pale-blue: hsl(226, 100%, 87%); /*(CTA Text)*/
 	--white: hsl(0, 0%, 100%); /*(Pricing Component Background)*/
-	--light-grayish-blue-toggle: hsl(223, 50%, 87%); /*(Toggle Background) */
+	--light-grayish-blue-toggle: hsl(222, 49%, 87%); /*(Toggle Background) */
 	--light-grayish-blue: hsl(226, 68%, 95%); /*(Empty Slider Bar)*/
 	--grayish-blue: hsl(225, 20%, 60%); /*(Text)*/
-	--dark-desaturated-blue: hsl(226, 36%, 25%); /*(Text & CTA Background)* */
+	--dark-desaturated-blue: hsl(226, 36%, 25%); /*(Text & CTA Background)*/
+	--dark-desaturated-blue-bright: hsl(226, 42%, 39%); /*button hover effect */
 	--very-pale-blue: hsl(230, 100%, 99%); /* (Main Background)*/
 }
 
@@ -190,7 +191,7 @@ span.dollars {
 	justify-content: space-around;
 	align-items: center;
 	font-size: 0.75rem;
-	margin: 1rem auto;
+	margin: 1rem auto 2.2rem auto;
 }
 .monthly,
 .yearly {
@@ -277,7 +278,33 @@ input:checked + .switch-slider:before {
 	justify-content: space-around;
 	align-items: center;
 	list-style-image: url(./images/icon-check.svg);
+	margin: 1.5rem auto;
 }
+
+.checklist li {
+	padding-left: 0.5rem;
+	font-size: 0.75rem;
+	padding-bottom: 0.7rem;
+}
+
+button.cta {
+	background: none;
+	background-color: var(--dark-desaturated-blue);
+	color: var(--pale-blue);
+	border: none;
+	padding: 0.8rem 2.75rem;
+	font-size: 1em;
+	transition: all 0.2s;
+	font-size: 0.75rem;
+	letter-spacing: 0.1em;
+	border-radius: 20px;
+}
+button:hover {
+	cursor: pointer;
+	background-color: var(--dark-desaturated-blue-bright);
+	box-shadow: 0 1rem 1rem 0 var(--light-grayish-blue);
+}
+
 /* wider screen styles styles */
 @media only screen and (min-width: 1050px) {
 	.card-top {
