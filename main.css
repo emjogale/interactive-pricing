@@ -344,7 +344,7 @@ button:hover {
 			"amount"
 			"billing ";
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr 1.5fr;
+		grid-template-rows: 2fr 0.75fr 1.5fr;
 		grid-template-areas:
 			"page-views amount"
 			"slider-container slider-container"
