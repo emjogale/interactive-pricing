@@ -56,7 +56,8 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 - creating a custom range slider. This was a big challenge and required a lot of googling and reading around the topic.
 - [Here is a codepen I created while working on the slider design](https://codepen.io/emjogale/pen/yLPVYXv)
-- how to center an absolutely positioned element using negative margin
+- that layouts can look VERY different on different screens. This made me completely rethink the layout I had gone for.
+- Not to have more than one label for a switch
 
 ### Continued development
 
@@ -65,7 +66,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Useful resources
 
-- [Creating A Custom Range Input That Looks Consistent Across All Browsers](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/?utm_source=CSS-Weekly&utm_campaign=Issue-490&utm_medium=email#comments-create-custom-range-input-consistent-browsers) this is an excellent resource which clearly explains the steps required to style a custom slider for a consistent cross-browser result -[Positioning Elements on the Web](https://thoughtbot.com/blog/positioning#position)
+- [Creating A Custom Range Input That Looks Consistent Across All Browsers](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/?utm_source=CSS-Weekly&utm_campaign=Issue-490&utm_medium=email#comments-create-custom-range-input-consistent-browsers) this is an excellent resource which clearly explains the steps required to style a custom slider for a consistent cross-browser result
 
 ## Author
 
