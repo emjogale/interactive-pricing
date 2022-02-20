@@ -31,6 +31,7 @@ body {
 main {
 	min-height: 100vh;
 	background: no-repeat url(./images/bg-pattern.svg);
+	background-color: var(--very-pale-blue);
 }
 
 /* header */
@@ -323,6 +324,7 @@ button:hover {
 	h1 {
 		font-size: 1.75rem;
 		padding-top: 2.6rem;
+		margin-bottom: 0.8rem;
 	}
 	.sign-up {
 		display: flex;
@@ -337,7 +339,7 @@ button:hover {
 		margin: 3rem auto;
 	}
 	.card-top {
-		padding-top: 2rem;
+		padding-top: 1rem;
 		display: grid;
 		grid-template-areas:
 			"page-views "
