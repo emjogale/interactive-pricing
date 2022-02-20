@@ -98,6 +98,11 @@ span.views {
 	margin: 1.5rem auto;
 }
 
+input#slider.slider {
+	height: 0.5rem;
+	border-radius: 0.25rem;
+}
+
 input[type="range"] {
 	-webkit-appearance: none;
 	background: transparent;
