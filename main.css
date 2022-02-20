@@ -121,6 +121,11 @@ input[type="range"]::-moz-range-track {
 	height: 0.5rem;
 	border-radius: 0.25rem;
 }
+.slider::-moz-range-progress {
+	background: var(--soft-cyan);
+	height: 0.5rem;
+	border-radius: 0.25rem;
+}
 
 /* thumb styles */
 input[type="range"]::-webkit-slider-thumb {
@@ -183,12 +188,13 @@ span.dollars {
 span.dollars {
 	display: inline-block;
 	width: 95px;
+	text-align: center;
 }
 /* billing section */
 .billing {
 	width: 85%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	font-size: 0.75rem;
 	margin: 1rem auto 2.2rem auto;
@@ -199,6 +205,10 @@ span.dollars {
 }
 .monthly {
 	padding-left: 1rem;
+	padding-right: 0.75rem;
+}
+.yearly {
+	padding-left: 0.75rem;
 }
 .mobile.discount {
 	display: inline-block;
@@ -265,7 +275,6 @@ input:checked + .switch-slider:before {
 
 /* card-bottom section */
 .card-bottom {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -307,6 +316,23 @@ button:hover {
 
 /* wider screen styles styles */
 @media only screen and (min-width: 1050px) {
+	.intro h1 {
+		font-size: 1.75rem;
+		padding-top: 2.5rem;
+	}
+	.sign-up {
+		display: flex;
+		flex-direction: row;
+	}
+	.credit {
+		padding-left: 0.3rem;
+	}
+
+	.pricing-component-card {
+		width: 545px;
+
+		margin: 5.5rem auto;
+	}
 	.card-top {
 		display: grid;
 		grid-template-areas:
@@ -315,19 +341,51 @@ button:hover {
 			"amount"
 			"billing ";
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 3fr 1fr 3fr;
+		grid-template-rows: 2fr 1fr 2fr;
 		grid-template-areas:
 			"page-views amount"
 			"slider-container slider-container"
 			"billing billing";
 	}
+	.page-views {
+		font-size: 0.87rem;
+		padding-left: 1rem;
+	}
+	.page-views {
+		width: 75%;
+	}
 	.amount {
 		grid-area: amount;
+		font-size: 2.5rem;
+		padding-left: 0.5rem;
+	}
+	span.dollars {
+		min-width: 110px;
 	}
 	.slider-container {
 		grid-area: slider-container;
 	}
 	.billing {
 		grid-area: billing;
+		justify-content: center;
+		margin-left: 5rem;
+	}
+	.mobile.discount {
+		display: none;
+	}
+	.desktop.discount {
+		display: block;
+		padding: 0.4rem;
+		margin-left: 0.75rem;
+	}
+	.card-bottom {
+		width: 95%;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	.card-bottom ul {
+		align-items: flex-start;
+		margin-left: 3rem;
 	}
 }
