@@ -337,6 +337,7 @@ button:hover {
 		margin: 3rem auto;
 	}
 	.card-top {
+		padding-top: 2.5rem;
 		display: grid;
 		grid-template-areas:
 			"page-views "
@@ -353,7 +354,7 @@ button:hover {
 	.page-views {
 		font-size: 0.87rem;
 		padding-left: 1rem;
-		margin-top: 2.5rem;
+		margin-top: 0;
 	}
 	.page-views {
 		width: 75%;
