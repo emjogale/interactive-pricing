@@ -22,8 +22,7 @@
 }
 
 /* Typography */
-body,
-button {
+body {
 	font-family: "Manrope", sans-serif;
 	color: var(--grayish-blue);
 }
@@ -35,8 +34,9 @@ main {
 
 /* header */
 header {
-	padding: 5rem 0 3rem;
+	padding: 4rem 0 3rem;
 	background: no-repeat center url(./images/pattern-circles.svg);
+	background-position-y: 2.2rem;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -60,7 +60,7 @@ header p {
 .pricing-component-card {
 	border: 1px solid black;
 	border-radius: 0.5rem;
-	margin: 3rem 1.5rem;
+	margin: 2.5rem 1.8rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -92,12 +92,78 @@ span.views {
 	width: 40px;
 	text-align: end;
 }
+/* slider styles */
+input[type="range"] {
+	-webkit-appearance: none;
+	background: transparent;
+	cursor: pointer;
+	width: 100%;
+	background: linear-gradient(
+		90deg,
+		var(--soft-cyan) 0% 47%,
+		var(--light-grayish-blue) 44% 100%
+	);
+}
+
+/* track styles */
+.slider-container {
+	width: 85%;
+	margin: 2rem auto;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+	height: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+input[type="range"]::-moz-range-track {
+	height: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+/* thumb styles */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-image: url(./images/icon-slider.svg);
+	background-color: var(--strong-cyan);
+	box-shadow: 0px 10px 20px 5px var(--soft-cyan);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	margin-top: -16px;
+}
+
+input[type="range"]::-moz-range-thumb {
+	border: none;
+	background-image: url(./images/icon-slider.svg);
+	background-color: var(--strong-cyan);
+	box-shadow: 0px 10px 20px 5px var(--soft-cyan);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	margin-top: -16px;
+}
+
+/* focus styles */
+input[type="range"]:focus {
+	outline: none;
+	cursor: grab;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+	border: 1px solid var(--soft-cyan);
+	outline: 1px solid var(--soft-cyan);
+}
 /* amount per month section */
 .amount {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 2rem;
+	margin: 1rem auto;
 }
 
 .amount p,
@@ -114,7 +180,7 @@ span.dollars {
 }
 span.dollars {
 	display: inline-block;
-	width: 115px;
+	width: 95px;
 }
 .billing {
 	margin: 0 0 0 8%;
