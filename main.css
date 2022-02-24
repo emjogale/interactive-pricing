@@ -22,6 +22,21 @@
 	font-size: 16px;
 }
 
+/* visually hidden */
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
 /* Typography */
 body {
 	font-family: "Manrope", sans-serif;
@@ -204,7 +219,106 @@ span.dollars {
 	font-size: 0.75rem;
 	margin: 1rem auto 2.2rem auto;
 }
-.monthly,
+
+.radio-switch {
+	border: none;
+	font-size: 0.8rem;
+	margin: 2.5rem auto;
+	padding: 0;
+	white-space: nowrap;
+}
+/* .radio-switch-inner {
+	border: 1px solid black;
+	padding: 3rem;
+} */
+.radio-switch-inner,
+.radio-switch-label {
+	display: inline-block;
+	position: relative;
+}
+
+.radio-switch-label {
+	z-index: 2;
+	line-height: 2;
+	cursor: pointer;
+}
+
+.radio-switch input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	height: 100%;
+	margin: 0;
+	opacity: 0.00001;
+	position: absolute;
+	top: 0;
+	width: 30%;
+	z-index: 3;
+}
+
+.radio-switch input:first-of-type {
+	left: 0;
+}
+
+.radio-switch input:last-of-type {
+	right: 0;
+}
+
+/* .radio-switch input:not(:checked):hover + label{
+
+} */
+.radio-switch label:first-of-type {
+	padding-right: 5em;
+}
+
+.radio-switch label:last-of-type {
+	margin-left: -4.25em;
+	padding-left: 5em;
+}
+
+.radio-switch:focus-within label:first-of-type::after {
+	background-color: var(--strong-cyan);
+}
+
+.radio-switch label:first-of-type:before,
+.radio-switch label:first-of-type:after {
+	content: "";
+	height: 2em;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	vertical-align: middle;
+}
+
+.radio-switch label:first-of-type:before {
+	background: #fff;
+	border-radius: 100%;
+	position: absolute;
+	transition: right 0.2s ease-in-out;
+	right: 2px;
+	top: 2px;
+	height: calc(2em - (2 * 2px));
+	width: calc(2em - (2 * 2px));
+	z-index: 2;
+}
+
+.radio-switch label:first-of-type:after {
+	background: var(--light-grayish-blue-toggle);
+	border-radius: 1em;
+	margin: 0 1em;
+	width: 4em;
+}
+
+.radio-switch input:first-of-type:checked ~ label:first-of-type:before {
+	right: calc(2em + 2px);
+}
+
+.radio-switch input:last-of-type:checked ~ label:last-of-type {
+	z-index: 1;
+}
+
+/* .monthly,
 .yearly {
 	font-size: 0.75rem;
 }
@@ -214,7 +328,7 @@ span.dollars {
 }
 .yearly {
 	padding-left: 0.75rem;
-}
+} */
 .mobile.discount {
 	display: inline-block;
 	padding: 0.3rem 0.4rem;
@@ -255,9 +369,9 @@ span.dollars {
 	transition: 0.3s;
 }
 
-input:checked + .switch-slider {
+/* input:checked + .switch-slider {
 	background-color: var(--strong-cyan);
-}
+} */
 
 .switch-slider:before {
 	position: absolute;
@@ -381,7 +495,7 @@ button:hover {
 		grid-area: billing;
 		justify-content: center;
 		margin-top: 1.5rem;
-		margin-left: 5rem;
+		margin-left: 6rem;
 	}
 	.mobile.discount {
 		display: none;
@@ -389,7 +503,7 @@ button:hover {
 	.desktop.discount {
 		display: block;
 		padding: 0.4rem;
-		margin-left: 0.75rem;
+		margin-right: 5rem;
 	}
 	.card-bottom {
 		width: 95%;
