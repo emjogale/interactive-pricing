@@ -296,10 +296,10 @@ span.dollars {
 	border-radius: 100%;
 	position: absolute;
 	transition: right 0.2s ease-in-out;
-	right: 2px;
-	top: 2px;
-	height: calc(2em - (2 * 2px));
-	width: calc(2em - (2 * 2px));
+	right: 3px;
+	top: 3px;
+	height: calc(2em - (2 * 3px));
+	width: calc(2em - (2 * 3px));
 	z-index: 2;
 }
 
