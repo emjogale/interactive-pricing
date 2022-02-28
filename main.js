@@ -45,8 +45,10 @@ function calculatePageViews(e) {
 	amount.textContent = `${num}.00`;
 }
 
-// calculate 25% discount when monthly billing is checked
+// calculate 25% discount when yearly billing is checked
 discount.addEventListener("click", checkDiscount);
+// revert to full price if monthly billing is selected
+monthly.addEventListener("click", checkDiscount);
 
 //filling the range with color when thumb is moved
 slider.addEventListener("input", function () {
