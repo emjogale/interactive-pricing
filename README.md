@@ -57,16 +57,19 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 - creating a custom range slider. This was a big challenge and required a lot of googling and reading around the topic.
 - [Here is a codepen I created while working on the slider design](https://codepen.io/emjogale/pen/yLPVYXv)
 - that layouts can look VERY different on different screens. This made me completely rethink the layout I had gone for.
-- Not to have more than one label for a switch
+- Not to have more than one label for a switch - Grace Snow pointed this out to me and kindly sent a link to one of her projects which gave an example of an accessible toggle
+- How to change the properties of a psuedo element using CSS custom properties. I needed to work out how to do this in order to change the colour of the toggle-switch if the discount is applied
 
 ### Continued development
 
 - how to refactor the Javascript, as I think it is quite clumsy at the moment
-- how to make the slider look the same across all browsers - and in the solution/design comparison!
+- how to make the slider responsive - if used with a screen reader it should give a custom value to tel the user how many pageviews equate to the different prices
 
 ### Useful resources
 
 - [Creating A Custom Range Input That Looks Consistent Across All Browsers](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/?utm_source=CSS-Weekly&utm_campaign=Issue-490&utm_medium=email#comments-create-custom-range-input-consistent-browsers) this is an excellent resource which clearly explains the steps required to style a custom slider for a consistent cross-browser result
+- [Accessible toggle example by Grace Snow](https://www.frontendmentor.io/solutions/accessible-toggle-in-html-css-and-js-with-explanatory-notes-Z6gD3qfGl)
+- [How to Change Look & Feel of Pseudo Elements using JavaScript and CSS Custom Properties](https://blog.shhdharmen.me/how-to-change-look-and-feel-of-pseudo-elements-using-javascript-and-css-custom-properties)
 
 ## Author
 

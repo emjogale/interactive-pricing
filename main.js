@@ -3,17 +3,19 @@ let pageviews = document.querySelector(".page-views span");
 let amount = document.querySelector("span.dollars");
 let discount = document.getElementById("yearly");
 let monthly = document.getElementById("monthly");
-
+let toggle = document.querySelector(".radio-switch");
 let views;
 let num = 16;
 
-// function to see if discount checkbox is checked/unchecked and if so apply/remove discount
+// function to see if discount checkbox is checked/unchecked and if so apply/remove discount and change background color
 function checkDiscount() {
 	if (discount.checked) {
+		toggle.style.setProperty("--toggle-background", "#10d5c2");
 		if (num == 8 || num == 12 || num == 16 || num == 24 || num == 36) {
 			num = (num * 75) / 100;
 		}
 	} else {
+		toggle.style.setProperty("--toggle-background", "#ced7ee");
 		if (num == 6 || num == 9 || num == 12 || num == 18 || num == 27) {
 			num += num / 3;
 		}
@@ -48,6 +50,7 @@ function calculatePageViews(e) {
 
 // calculate 25% discount when yearly billing is checked
 discount.addEventListener("click", checkDiscount);
+
 // revert to full price if monthly billing is selected
 monthly.addEventListener("click", checkDiscount);
 

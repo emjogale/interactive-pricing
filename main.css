@@ -6,7 +6,8 @@
 	--light-red: hsl(15, 100%, 70%); /* (Discount Text)*/
 	--pale-blue: hsl(226, 100%, 87%); /*(CTA Text)*/
 	--white: hsl(0, 0%, 100%); /*(Pricing Component Background)*/
-	--light-grayish-blue-toggle: hsl(222, 49%, 87%); /*(Toggle Background) */
+	--toggle-background: hsl(223, 48%, 87%); /*(Toggle Background) */
+	--discount-toggle: hsl(174, 86%, 45%);
 	--light-grayish-blue: hsl(226, 68%, 95%); /*(Empty Slider Bar)*/
 	--grayish-blue: hsl(225, 20%, 60%); /*(Text)*/
 	--dark-desaturated-blue: hsl(226, 36%, 25%); /*(Text & CTA Background)*/
@@ -277,10 +278,6 @@ span.dollars {
 	padding-left: 5em;
 }
 
-.radio-switch:focus-within label:first-of-type::after {
-	background-color: var(--strong-cyan);
-}
-
 .radio-switch label:first-of-type:before,
 .radio-switch label:first-of-type:after {
 	content: "";
@@ -304,7 +301,7 @@ span.dollars {
 }
 
 .radio-switch label:first-of-type:after {
-	background: var(--light-grayish-blue-toggle);
+	background: var(--toggle-background);
 	border-radius: 1em;
 	margin: 0 1em;
 	width: 4em;
@@ -364,7 +361,7 @@ span.dollars {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--light-grayish-blue-toggle);
+	background-color: var(--toggle-background);
 	border-radius: 30px;
 	transition: 0.3s;
 }
