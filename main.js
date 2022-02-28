@@ -3,6 +3,7 @@ let pageviews = document.querySelector(".page-views span");
 let amount = document.querySelector("span.dollars");
 let discount = document.getElementById("yearly");
 let monthly = document.getElementById("monthly");
+
 let views;
 let num = 16;
 
