@@ -472,8 +472,7 @@ button:hover {
 	.billing {
 		grid-area: billing;
 		justify-content: center;
-		margin-top: 1.5rem;
-		margin-left: 6rem;
+		margin-top: 1.5rem 0 0.75rem 6rem;
 	}
 	.mobile.discount {
 		display: none;
