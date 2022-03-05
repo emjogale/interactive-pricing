@@ -427,7 +427,6 @@ button:hover {
 	.pricing-component-card {
 		width: 545px;
 		margin: 3rem auto;
-		border: 1px solid black;
 		padding: 0 2rem;
 	}
 	.card-top {
