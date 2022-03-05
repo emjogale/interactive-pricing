@@ -487,7 +487,7 @@ button:hover {
 		width: 95%;
 		flex-direction: row;
 		justify-content: space-between;
-		margin: 0 auto;
+		margin: 1rem auto;
 	}
 	.card-bottom ul {
 		align-items: flex-start;
