@@ -64,6 +64,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 - how to refactor the Javascript, as I think it is quite clumsy at the moment
 - how to make the slider responsive - if used with a screen reader it should give a custom value to tel the user how many pageviews equate to the different prices
+- finish up layout corrections having added in accessible toggle
 
 ### Useful resources
 

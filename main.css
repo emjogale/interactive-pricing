@@ -77,7 +77,7 @@ header p {
 /* pricing-component-card section */
 .pricing-component-card {
 	border-radius: 0.5rem;
-	margin: 2.5rem 1.8rem;
+	margin: 0.1rem 1.8rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -218,20 +218,17 @@ span.dollars {
 	justify-content: center;
 	align-items: center;
 	font-size: 0.75rem;
-	margin: 1rem auto 2.2rem auto;
+	margin: 0 auto;
 }
 
 .radio-switch {
 	border: none;
 	font-size: 0.8rem;
-	margin: 2.5rem auto;
+
 	padding: 0;
 	white-space: nowrap;
 }
-/* .radio-switch-inner {
-	border: 1px solid black;
-	padding: 3rem;
-} */
+
 .radio-switch-inner,
 .radio-switch-label {
 	display: inline-block;
@@ -266,9 +263,6 @@ span.dollars {
 	right: 0;
 }
 
-/* .radio-switch input:not(:checked):hover + label{
-
-} */
 .radio-switch label:first-of-type {
 	padding-right: 5em;
 }
@@ -315,17 +309,6 @@ span.dollars {
 	z-index: 1;
 }
 
-/* .monthly,
-.yearly {
-	font-size: 0.75rem;
-}
-.monthly {
-	padding-left: 1rem;
-	padding-right: 0.75rem;
-}
-.yearly {
-	padding-left: 0.75rem;
-} */
 .mobile.discount {
 	display: inline-block;
 	padding: 0.3rem 0.4rem;
@@ -366,10 +349,6 @@ span.dollars {
 	transition: 0.3s;
 }
 
-/* input:checked + .switch-slider {
-	background-color: var(--strong-cyan);
-} */
-
 .switch-slider:before {
 	position: absolute;
 	content: "";
@@ -395,7 +374,7 @@ input:checked + .switch-slider:before {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin: 2rem auto;
+	margin: 1.5rem auto;
 }
 .card-bottom ul {
 	display: flex;
@@ -448,6 +427,8 @@ button:hover {
 	.pricing-component-card {
 		width: 545px;
 		margin: 3rem auto;
+		border: 1px solid black;
+		padding: 0 2rem;
 	}
 	.card-top {
 		padding-top: 1rem;
@@ -466,7 +447,7 @@ button:hover {
 	}
 	.page-views {
 		font-size: 0.87rem;
-		padding-left: 1rem;
+		/* padding-left: 1rem; */
 		margin-bottom: 0;
 		margin-top: 0;
 	}
@@ -487,6 +468,7 @@ button:hover {
 	.slider-container {
 		grid-area: slider-container;
 		margin: 1rem auto;
+		width: 88%;
 	}
 	.billing {
 		grid-area: billing;
@@ -499,8 +481,8 @@ button:hover {
 	}
 	.desktop.discount {
 		display: block;
-		padding: 0.4rem;
-		margin-right: 5rem;
+		padding: 0.5rem;
+		margin: 0 4rem 0 0.5rem;
 	}
 	.card-bottom {
 		width: 95%;
@@ -510,7 +492,7 @@ button:hover {
 	}
 	.card-bottom ul {
 		align-items: flex-start;
-		margin-left: 3rem;
+		margin-left: 2rem;
 	}
 	.checklist li {
 		padding-bottom: 0.9rem;
